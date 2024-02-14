@@ -45,11 +45,15 @@ export default {
 
         const iframeResizerScript = document.createElement("script");
         iframeResizerScript.src = "https://formnx.com/js/iframeResizer.js";
-        document.head.appendChild(iframeResizerScript);
 
-        const widgetScript = document.createElement("script");
-        widgetScript.src = "https://formnx.com/js/widget.js";
-        document.head.appendChild(widgetScript);
+        iframeResizerScript.onload = () => {
+            // Only load widgetScript after iframeResizerScript is loaded
+            const widgetScript = document.createElement("script");
+            widgetScript.src = "https://formnx.com/js/widget.js";
+            document.head.appendChild(widgetScript);
+        };
+
+        document.head.appendChild(iframeResizerScript);
     },
 
     methods: {
