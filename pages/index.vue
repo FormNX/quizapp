@@ -1,4 +1,11 @@
 <template>
+    <Head>
+      <Title>Quiz For You ~ Fun Practical QUizzes</Title>
+      <Meta name="description" content="Quiz For You ~ Fun Practical QUizzes" />
+      <Meta name="og:image" content="/quiz.png" />
+      <Meta name="twitter:image" content="/quiz.png" />
+    </Head>
+
     <div style="background: url('https://www.transparenttextures.com/patterns/45-degree-fabric-light.png');">
         <div class="flex flex-col items-center justify-center mt-2">
             <h1 class="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl">
@@ -46,13 +53,16 @@
                         </span>
                     </a>
 
-                    
-<a href="https://formnx.com/f/is-formnx-the-right-choice-for-you--17gm21" target="_blank" class="inline-flex items-center justify-center p-5 text-base font-medium text-gray-500 rounded-lg bg-gray-50 hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white mt-3">                                   
-    <span class="w-full">Is FormNX Right Choice?</span>
-    <svg class="w-4 h-4 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-    </svg>
-</a> 
+
+                    <a href="https://formnx.com/f/is-formnx-the-right-choice-for-you--17gm21" target="_blank"
+                        class="inline-flex items-center justify-center p-5 text-base font-medium text-gray-500 rounded-lg bg-gray-50 hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white mt-3">
+                        <span class="w-full">Is FormNX Right Choice?</span>
+                        <svg class="w-4 h-4 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 5h12m0 0L9 1m4 4L9 9" />
+                        </svg>
+                    </a>
 
 
                 </div>
@@ -66,6 +76,14 @@
 import { ref } from "vue";
 
 export default {
+    head(){
+    return {
+      meta:[
+      { hid: 'og-title', property: 'og:title', content: '' },
+      { hid: 'og-desc', property: 'og:description', content: 'Quiz For You ~ Fun Practical QUizzes' },
+      { hid: 'og-image', property: 'og:image', content: 'https://domain.com/my-image.jpg'},
+      ]
+    }},
     data() {
         return {
             quizzes: {
@@ -79,9 +97,9 @@ export default {
                 India: { url: "https://formnx.com/f/21ag52", label: "🇮🇳 How Much You Know About India", description: "Quiz on India's knowledge" },
                 Marketers: { url: "https://formnx.com/f/97fj13", label: "📈 Quiz For Marketers!", description: "Quiz for marketers" },
                 BuildingInPublic: { url: "https://formnx.com/f/16xv16", label: "🏢 Building in Public Wisdom Quiz", description: "Test your knowledge on building in public" },
-                WordPress: { url: "https://formnx.com/f/46xx85", label: "🔍 WordPress Quiz", description: "Test your knowledge about WordPress"},
-                TechStartups: { url: "https://formnx.com/f/71ll98", label: "🚀 Tech Startups Quiz!", description: "Quiz on tech startups"},
-                HealthAndWellness: { url: "https://formnx.com/f/51um56", label: "💪 Health and Wellness Ventures Quiz!", description: "Quiz on health and wellness ventures"},
+                WordPress: { url: "https://formnx.com/f/46xx85", label: "🔍 WordPress Quiz", description: "Test your knowledge about WordPress" },
+                TechStartups: { url: "https://formnx.com/f/71ll98", label: "🚀 Tech Startups Quiz!", description: "Quiz on tech startups" },
+                HealthAndWellness: { url: "https://formnx.com/f/51um56", label: "💪 Health and Wellness Ventures Quiz!", description: "Quiz on health and wellness ventures" },
             },
         };
     },

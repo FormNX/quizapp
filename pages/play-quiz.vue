@@ -1,4 +1,12 @@
 <template>
+
+    <Head>
+      <Title>Quiz For You ~ Fun Practical QUizzes</Title>
+      <Meta name="description" content="Quiz For You ~ Fun Practical QUizzes" />
+      <Meta name="og:image" content="/quiz.png" />
+      <Meta name="twitter:image" content="/quiz.png" />
+    </Head>
+
     <div>
 
         <a class="btn btn-xs" @click="goBack">
