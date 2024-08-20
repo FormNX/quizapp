@@ -29,7 +29,7 @@
     
     <div class="flex justify-center w-full p-4">
     <div class="bg-gray-200 p-4 rounded-lg">
-        <h3 class="text-lg font-semibold mb-2">Powered by <a href="https://formnx.com/" target="_blank">FormNX</a></h3>
+        <h3 class="text-lg font-semibold mb-2">Powered by <a href="https://formnx.com/?ref=quiz" target="_blank">FormNX</a></h3>
 
         <ul class="list-none space-y-2 text-sm">
             <li class="flex items-center before:content-['✔'] before:text-green-500 before:mr-2">
