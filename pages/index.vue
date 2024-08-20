@@ -1,7 +1,7 @@
 <template>
     <Head>
       <Title>Quiz For You ~ Fun Practical QUizzes</Title>
-      <Meta name="description" content="Quiz For You ~ Fun Practical QUizzes" />
+      <Meta name="description" content="Quiz For You ~ Fun Practical Quizzes" />
       <Meta name="og:image" content="/quiz.png" />
       <Meta name="twitter:image" content="/quiz.png" />
     </Head>
@@ -18,7 +18,7 @@
             </p>
         </div>
 
-        <hr class="w-48 h-0.5 mx-auto bg-gray-100 border-0 rounded md:mt-4 dark:bg-gray-700 mb-10">
+        <hr class="w-48 h-0.5 mx-auto bg-gray-100 border-0 rounded  dark:bg-gray-700 mb-4">
 
 
         <div class="flex">
@@ -38,12 +38,19 @@
             <!-- Right side with "Powered by FormNX" ad -->
             <div class="flex-none w-2/12 p-4">
                 <div class="bg-gray-200 p-4 rounded-lg">
-                    <h3 class="text-lg font-semibold mb-2">Powered by FormNX</h3>
-                    <ul class="list-disc ml-3 my-4">
-                        <li class="text-sm text-gray-600 my-2">Create any type of forms in minutes</li>
-                        <li class="text-sm text-gray-600 my-2">1000's of Templates</li>
-                        <li class="text-sm text-gray-600 my-2">Use free forever</li>
-                    </ul>
+                    <h3 class="text-lg font-semibold mb-2">Powered by <a href="https://formnx.com/" target="_blank">FormNX</a></h3>
+
+                            <ul class="list-none space-y-2 text-sm">
+                                <li class="flex items-center before:content-['✔'] before:text-green-500 before:mr-2">
+                                    Create forms in minutes
+                                </li>
+                                <li class="flex items-center before:content-['✔'] before:text-green-500 before:mr-2">
+                                    1000's of Templates
+                                </li>
+                                <li class="flex items-center before:content-['✔'] before:text-green-500 before:mr-2">
+                                    Use free forever
+                                </li>
+                            </ul>
 
                     <a class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800 mt-4"
                         href="https://formnx.com/?ref=quiz" target="_blank">
@@ -54,7 +61,7 @@
                     </a>
 
 
-                    <a href="https://formnx.com/f/is-formnx-the-right-choice-for-you--17gm21" target="_blank"
+                    <!-- <a href="https://formnx.com/f/is-formnx-the-right-choice-for-you--17gm21" target="_blank"
                         class="inline-flex items-center justify-center p-5 text-base font-medium text-gray-500 rounded-lg bg-gray-50 hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white mt-3">
                         <span class="w-full">Is FormNX Right Choice?</span>
                         <svg class="w-4 h-4 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
@@ -62,7 +69,7 @@
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M1 5h12m0 0L9 1m4 4L9 9" />
                         </svg>
-                    </a>
+                    </a> -->
 
 
                 </div>
@@ -89,20 +96,21 @@ export default {
             quizzes: {
                 Copywriters: { url: "https://formnx.com/f/13um64", label: "📝 Quiz for Copywriters", description: "Test your copywriting skills" },
                 CopywritersAdvance: { url: "https://formnx.com/f/83yj48", label: "🚀 Quiz for Copywriters (Advance)", description: "Advanced copywriting quiz" },
-                webdev: { url: "https://formnx.com/f/85kf10", label: "💻 Quiz for Web Dev", description: "Web development knowledge test" },
                 Seo: { url: "https://formnx.com/f/10ne24", label: "🔍 Quiz for SEO Specialist", description: "SEO specialist quiz" },
-                Mindset: { url: "https://formnx.com/f/21ro11", label: "😊 Positive Mindset quiz", description: "Test your positive mindset" },
-                Laravel: { url: "https://formnx.com/f/55xu14", label: "🌐 Quiz For Laravel Developer", description: "Laravel developer knowledge quiz" },
-                LandingPage: { url: "https://formnx.com/f/20nt15", label: "🏠 Quiz on Building Landing Page", description: "Test your landing page building skills" },
-                India: { url: "https://formnx.com/f/21ag52", label: "🇮🇳 How Much You Know About India", description: "Quiz on India's knowledge" },
                 Marketers: { url: "https://formnx.com/f/97fj13", label: "📈 Quiz For Marketers!", description: "Quiz for marketers" },
                 BuildingInPublic: { url: "https://formnx.com/f/16xv16", label: "🏢 Building in Public Wisdom Quiz", description: "Test your knowledge on building in public" },
-                WordPress: { url: "https://formnx.com/f/46xx85", label: "🔍 WordPress Quiz", description: "Test your knowledge about WordPress" },
                 TechStartups: { url: "https://formnx.com/f/71ll98", label: "🚀 Tech Startups Quiz!", description: "Quiz on tech startups" },
-                HealthAndWellness: { url: "https://formnx.com/f/51um56", label: "💪 Health and Wellness Ventures Quiz!", description: "Quiz on health and wellness ventures" },
                 GoogleSearchSkills: { url: "https://formnx.com/f/google-search-skills-68ft17", label: "🔍 Quiz on Google Search Skills !", description: "Test your Google search prowess with a quick quiz on search skills. "},
+                LandingPage: { url: "https://formnx.com/f/20nt15", label: "🏠 Quiz on Building Landing Page", description: "Test your landing page building skills" },
+                HealthAndWellness: { url: "https://formnx.com/f/51um56", label: "💪 Health and Wellness Ventures Quiz!", description: "Quiz on health and wellness ventures" },
+                Mindset: { url: "https://formnx.com/f/21ro11", label: "😊 Positive Mindset quiz", description: "Test your positive mindset" },
+                WordPress: { url: "https://formnx.com/f/46xx85", label: "🔍 WordPress Quiz", description: "Test your knowledge about WordPress" },
+                webdev: { url: "https://formnx.com/f/85kf10", label: "💻 Quiz for Web Dev", description: "Web development knowledge test" },
+                Laravel: { url: "https://formnx.com/f/55xu14", label: "🌐 Quiz For Laravel Developer", description: "Laravel developer knowledge quiz" },
+                India: { url: "https://formnx.com/f/21ag52", label: "🇮🇳 How Much You Know About India", description: "Quiz on India's knowledge" },
             },
         };
     },
 };
 </script>
+

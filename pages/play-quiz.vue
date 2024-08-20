@@ -1,5 +1,6 @@
 <template>
 
+<span>
     <Head>
       <Title>Quiz For You ~ Fun Practical QUizzes</Title>
       <Meta name="description" content="Quiz For You ~ Fun Practical QUizzes" />
@@ -7,9 +8,8 @@
       <Meta name="twitter:image" content="/quiz.png" />
     </Head>
 
-    <div>
-
-        <a class="btn btn-xs" @click="goBack">
+    <div class="w-full">
+        <a class="btn btn-xs ml-1 mt-1" @click="goBack">
             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-narrow-left" width="24"
                 height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round"
                 stroke-linejoin="round">
@@ -20,8 +20,46 @@
             </svg>
             Back
         </a>
+    </div>
+
+    <div class="w-full">
         <iframe :src="src" frameborder="0" style="width: 1px; min-width: 100%;"></iframe>
     </div>
+    
+    
+    <div class="flex justify-center w-full p-4">
+    <div class="bg-gray-200 p-4 rounded-lg">
+        <h3 class="text-lg font-semibold mb-2">Powered by <a href="https://formnx.com/" target="_blank">FormNX</a></h3>
+
+        <ul class="list-none space-y-2 text-sm">
+            <li class="flex items-center before:content-['✔'] before:text-green-500 before:mr-2">
+                Create forms in minutes
+            </li>
+            <li class="flex items-center before:content-['✔'] before:text-green-500 before:mr-2">
+                1000's of Templates
+            </li>
+            <li class="flex items-center before:content-['✔'] before:text-green-500 before:mr-2">
+                Use free forever
+            </li>
+        </ul>
+
+        <!-- Centered Button -->
+        <div class="flex justify-center mt-4">
+            <a class="relative inline-flex items-center justify-center p-0.5 mb-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800"
+                href="https://formnx.com/?ref=quiz" target="_blank">
+                <span
+                    class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                    Get Started Free
+                </span>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+
+
+</span>
 </template>
   
 <script>
