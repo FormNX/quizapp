@@ -3,7 +3,7 @@
 <span>
     <Head>
       <Title>Quiz For You ~ Fun Practical QUizzes</Title>
-      <Meta name="description" content="Quiz For You ~ Fun Practical QUizzes" />
+      <Meta name="description" content="Quiz For You ~ Fun Practical QUizzes (V2)" />
       <Meta name="og:image" content="/quiz.png" />
       <Meta name="twitter:image" content="/quiz.png" />
     </Head>
@@ -23,7 +23,7 @@
     </div>
 
     <div class="w-full">
-        <iframe :src="src" frameborder="0" style="width: 1px; min-width: 100%;"></iframe>
+        <iframe :src="src" frameborder="0" style="width: 1px; min-width: 100%;" :id="iframe_id"></iframe>
     </div>
     
     
