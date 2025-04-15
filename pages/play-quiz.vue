@@ -70,24 +70,26 @@ export default {
         return {
 
             quizzes: {
-                Copywriters: { url: "https://formnx.com/f/13um64", label: "📝 Quiz for Copywriters", description: "Test your copywriting skills" },
-                CopywritersAdvance: { url: "https://formnx.com/f/83yj48", label: "🚀 Quiz for Copywriters (Advance)", description: "Advanced copywriting quiz" },
-                webdev: { url: "https://formnx.com/f/85kf10", label: "💻 Quiz for Web Dev", description: "Web development knowledge test" },
-                Seo: { url: "https://formnx.com/f/10ne24", label: "🔍 Quiz for SEO Specialist", description: "SEO specialist quiz" },
-                Mindset: { url: "https://formnx.com/f/21ro11", label: "😊 Positive Mindset quiz", description: "Test your positive mindset" },
-                Laravel: { url: "https://formnx.com/f/55xu14", label: "🌐 Quiz For Laravel Developer", description: "Laravel developer knowledge quiz" },
-                LandingPage: { url: "https://formnx.com/f/20nt15", label: "🏠 Quiz on Building Landing Page", description: "Test your landing page building skills" },
-                India: { url: "https://formnx.com/f/21ag52", label: "🇮🇳 How Much You Know About India", description: "Quiz on India's knowledge" },
-                Marketers: { url: "https://formnx.com/f/97fj13", label: "📈 Quiz For Marketers!", description: "Quiz for marketers" },
-                BuildingInPublic: { url: "https://formnx.com/f/16xv16", label: "🏢 Building in Public Wisdom Quiz", description: "Test your knowledge on building in public" },
-                WordPress: { url: "https://formnx.com/f/46xx85", label: "🔍 WordPress Quiz", description: "Test your knowledge about WordPress"},
-                TechStartups: { url: "https://formnx.com/f/71ll98", label: "🚀 Tech Startups Quiz!", description: "Quiz on tech startups"},
-                HealthAndWellness: { url: "https://formnx.com/f/51um56", label: "💪 Health and Wellness Ventures Quiz!", description: "Quiz on health and wellness ventures"},
-                GoogleSearchSkills: { url: "https://formnx.com/f/google-search-skills-68ft17", label: "🔍 Quiz on Google Search Skills !", description: "Test your Google search prowess with a quick quiz on search skills. "},
+                Copywriters: { url: "https://formnx.com/f/13um64", label: "📝 Quiz for Copywriters", description: "Test your copywriting skills", iframe_id: "if13um64" },
+                CopywritersAdvance: { url: "https://formnx.com/f/83yj48", label: "🚀 Quiz for Copywriters (Advance)", description: "Advanced copywriting quiz", iframe_id: "if83yj48" },
+                webdev: { url: "https://formnx.com/f/85kf10", label: "💻 Quiz for Web Dev", description: "Web development knowledge test", iframe_id: "if85kf10" },
+                Seo: { url: "https://formnx.com/f/10ne24", label: "🔍 Quiz for SEO Specialist", description: "SEO specialist quiz", iframe_id: "if10ne24" },
+                Mindset: { url: "https://formnx.com/f/21ro11", label: "😊 Positive Mindset quiz", description: "Test your positive mindset", iframe_id: "if21ro11" },
+                Laravel: { url: "https://formnx.com/f/55xu14", label: "🌐 Quiz For Laravel Developer", description: "Laravel developer knowledge quiz", iframe_id:  "if55xu14" },
+                LandingPage: { url: "https://formnx.com/f/20nt15", label: "🏠 Quiz on Building Landing Page", description: "Test your landing page building skills", iframe_id: "if20nt15" },
+                India: { url: "https://formnx.com/f/21ag52", label: "🇮🇳 How Much You Know About India", description: "Quiz on India's knowledge", iframe_id: "if21ag52" },
+                Marketers: { url: "https://formnx.com/f/97fj13", label: "📈 Quiz For Marketers!", description: "Quiz for marketers", iframe_id: "if97fj13" },
+                BuildingInPublic: { url: "https://formnx.com/f/16xv16", label: "🏢 Building in Public Wisdom Quiz", description: "Test your knowledge on building in public", iframe_id: "if16xv16"},
+                WordPress: { url: "https://formnx.com/f/46xx85", label: "🔍 WordPress Quiz", description: "Test your knowledge about WordPress", iframe_id: "if46xx85"},
+                TechStartups: { url: "https://formnx.com/f/71ll98", label: "🚀 Tech Startups Quiz!", description: "Quiz on tech startups", iframe_id: "if71ll98"},
+                HealthAndWellness: { url: "https://formnx.com/f/51um56", label: "💪 Health and Wellness Ventures Quiz!", description: "Quiz on health and wellness ventures", iframe_id: "if51um56"},
+                GoogleSearchSkills: { url: "https://formnx.com/f/google-search-skills-68ft17", iframe_id: "if68ft17", label: "🔍 Quiz on Google Search Skills !", description: "Test your Google search prowess with a quick quiz on search skills. "},
             },
 
 
             src: '',
+            iframe_id: ''
+            
         };
     },
     mounted() {
@@ -111,6 +113,7 @@ export default {
             const input_quiz = this.$route.query.quiz;
             if (input_quiz && this.quizzes[input_quiz]) {
                 this.src = this.quizzes[input_quiz].url;
+                this.iframe_id = this.quizzes[input_quiz].iframe_id;
             } else {
                 console.error("Invalid quiz specified in the route");
             }
